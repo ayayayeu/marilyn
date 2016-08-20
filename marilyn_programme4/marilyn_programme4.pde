@@ -8,8 +8,8 @@
  UNIVERSITÄT BREMEN
  2016
  
- –– THE MISTAKING COMPUTER #1 ––
- DISTORTING AN IMAGE BY STRETCHING AND COMPRESSING IT.
+ –– THE MISTAKING COMPUTER #4 ––
+ Distorts an image by stretching and compressing it.
  *********************************************************************/
 
 // VARIABLES
@@ -17,6 +17,8 @@ boolean notDrawn = true;
 PImage photo;
 PImage m;
 int i = 1;
+float xPos;
+float yPos;
 
 void setup()
 {
@@ -50,14 +52,18 @@ void draw()
   photo = loadImage("capture.jpg");
 
   // DRAWING THE DISTORTED SCREENSHOT
-  image(photo, 0, 0, width+i, height-i); 
+  image(photo, xPos, yPos, height, width); 
 
   // SAVING THE NEW DISTORTED SCREENSHOT
   save("capture.jpg");
 
   // WAITING A BIT IN ORDER TO SAVE THE FIL PROPERLY
-  delay(250);
+  delay(50);
+  
+  // DEFINING THE POSITION OF THE IMAGE ON THE CANVAS
+  xPos = i;
+  yPos = yPos + sin(i);
 
-  // INVERTING THE VARIABLE I
-  i = -i;
+  // INCREMENTING I
+  i = i+1;
 }
