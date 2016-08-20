@@ -8,8 +8,10 @@
  UNIVERSITÄT BREMEN
  2016
  
-DISTORTS AN IMAGE BY STRETCHING AND COMPRESSING IT.
-*********************************************************/
+ –– THE MISTAKING COMPUTER #2 ––
+ DISTORTS AN IMAGE BY STRETCHING, RESPOSITIONING AND
+ COMPRESSING IT.
+ *********************************************************/
 
 // VARIABLES
 boolean notDrawn = true;
@@ -33,20 +35,26 @@ void draw()
   {
     // DRAWING THE ORIGINAL IMAGE
     image(m, 0, 0);
+
     // SAVES A SCREENSHOT OF THE CANVAS
     save("capture.jpg");
+
     // WAITING A BIT IN ORDER TO SAVE THE FILE PROPERLY
     delay(1000);
-    // SOMETHING IS DRAWN NOW
+
+    // SOMETHING HAS BEEN DRAWN NOW
     notDrawn = false;
   }
 
   // LOADS RECENT SCREENSHOT
   photo = loadImage("capture.jpg");
+
   // DRAWING THE DISTORTED SCREENSHOT
   image(photo, xPos, yPos, xPos+i, yPos+i); 
+
   // SAVING THE NEW DISTORTED SCREENSHOT
   save("capture.jpg");
+
   // WAITING A BIT IN ORDER TO SAVE THE FIL PROPERLY
   delay(50);
 
