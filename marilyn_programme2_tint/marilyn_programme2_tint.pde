@@ -1,4 +1,4 @@
-/*******************
+/*********************************************************************
 POSTMODERN WARHOL
 
 KENO WESTHOFF
@@ -8,8 +8,9 @@ PROF. DR. FRIEDER NAKE
 UNIVERSITÄT BREMEN
 2016
 
+ –– THE MISTAKING COMPUTER #2 / TINT ––
 Distorts an image by stretching and compressing it.
-*******************/
+*********************************************************************/
 
 boolean notDrawn = true;
 PImage photo;

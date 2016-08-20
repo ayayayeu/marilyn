@@ -1,4 +1,4 @@
-/*********************************************************
+/*********************************************************************
  POSTMODERN WARHOL
  
  KENO WESTHOFF
@@ -11,7 +11,7 @@
  –– THE MISTAKING COMPUTER #2 ––
  DISTORTS AN IMAGE BY STRETCHING, RESPOSITIONING AND
  COMPRESSING IT.
- *********************************************************/
+ **********************************************************************/
 
 // VARIABLES
 boolean notDrawn = true;

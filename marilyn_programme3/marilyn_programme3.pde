@@ -1,4 +1,4 @@
-/*********************************************************
+/*********************************************************************
  POSTMODERN WARHOL
  
  KENO WESTHOFF
@@ -12,7 +12,7 @@
  THIS PROGRAMME MODULATES TWO SINUSES IN ORDER TO 
  CALCULATE THE POSITION OF THE IMAGE ON THE CANVAS 
  ON THE X-AXIS.
- *********************************************************/
+ *********************************************************************/
 
 // VARIABLES
 boolean notDrawn = true;
