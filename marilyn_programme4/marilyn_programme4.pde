@@ -9,7 +9,7 @@
  2016
  
  –– THE MISTAKING COMPUTER #4 ––
- Distorts an image by stretching and compressing it.
+ THE POSITION OF THE IMAGE IS CALCULATED BY A SINUS FUNCTION.
  *********************************************************************/
 
 // VARIABLES
@@ -59,7 +59,7 @@ void draw()
 
   // WAITING A BIT IN ORDER TO SAVE THE FIL PROPERLY
   delay(50);
-  
+
   // DEFINING THE POSITION OF THE IMAGE ON THE CANVAS
   xPos = i;
   yPos = yPos + sin(i);

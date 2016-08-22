@@ -1,4 +1,4 @@
-/*********************************************************
+/*********************************************************************
  POSTMODERN WARHOL
  
  KENO WESTHOFF
@@ -9,8 +9,9 @@
  2016
  
  –– THE MISTAKING COMPUTER #5 ––
- DEFINING THE POSITION OF THE IMAGE ON THE X-AXIS WITH A TANGENT
- *********************************************************/
+DEFINING THE POSITION OF THE IMAGE ON THE X-AXIS WITH A 
+TANGENT FUNCTION.
+*********************************************************************/
 
 // VARIABLES
 boolean notDrawn = true;
