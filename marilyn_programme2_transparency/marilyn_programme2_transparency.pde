@@ -1,4 +1,4 @@
-/*******************
+/*********************************************************************
 POSTMODERN WARHOL
 
 KENO WESTHOFF
@@ -8,8 +8,9 @@ PROF. DR. FRIEDER NAKE
 UNIVERSITÄT BREMEN
 2016
 
-Distorts an image by stretching and compressing it.
-*******************/
+ DISTORTS AN IMAGE BY STRETCHING, REPOSITIONING, REDUCING OPACITY 
+ AND COMPRESSING IT.
+*********************************************************************/
 
 boolean notDrawn = true;
 PImage photo;

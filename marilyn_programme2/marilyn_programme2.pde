@@ -9,7 +9,7 @@
  2016
  
  –– THE MISTAKING COMPUTER #2 ––
- DISTORTS AN IMAGE BY STRETCHING, RESPOSITIONING AND
+ DISTORTS AN IMAGE BY STRETCHING, REPOSITIONING AND
  COMPRESSING IT.
  **********************************************************************/
 
