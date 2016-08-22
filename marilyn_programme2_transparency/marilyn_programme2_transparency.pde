@@ -1,17 +1,18 @@
 /*********************************************************************
-POSTMODERN WARHOL
-
-KENO WESTHOFF
-
-„THE ALOGRITHMIC DIMENSION IN ART“
-PROF. DR. FRIEDER NAKE
-UNIVERSITÄT BREMEN
-2016
-
+ POSTMODERN WARHOL
+ 
+ KENO WESTHOFF
+ 
+ „THE ALOGRITHMIC DIMENSION IN ART“
+ PROF. DR. FRIEDER NAKE
+ UNIVERSITÄT BREMEN
+ 2016
+ 
  DISTORTS AN IMAGE BY STRETCHING, REPOSITIONING, REDUCING OPACITY 
  AND COMPRESSING IT.
-*********************************************************************/
+ *********************************************************************/
 
+// VARIABLES
 boolean notDrawn = true;
 PImage photo;
 PImage m;
@@ -21,43 +22,58 @@ float yPos;
 
 void setup()
 {
+  // CANVAS SIZE
   size(500, 500);
+
+  // LOADING THE ORIGINAL IMAGE
   m = loadImage("marilyn.jpg");
 }
 
 
 void draw()
 {
-  if(notDrawn)
+  // HAS ANYTHING BEEN DRAWN YET?
+  if (notDrawn)
   {
-  /*background(255,255,255);
-  stroke(0);
-  line(20,50, 200, 500);*/
-  
-  image(m, 0, 0);
-  
-  save("capture.jpg");
-  delay(1000);
-  notDrawn = false;
+    // DRAWING THE ORIGINAL IMAGE
+    image(m, 0, 0);
+
+    // SAVES A SCREENSHOT OF THE CANVAS
+    save("capture.jpg");
+
+    // WAITING A BIT IN ORDER TO SAVE THE FILE PROPERLY
+    delay(1000);
+
+    // SOMETHING HAS BEEN DRAWN NOW
+    notDrawn = false;
   }
- 
-  
+
+  // LOADS RECENT SCREENSHOT
   photo = loadImage("capture.jpg");
+
+  // DRAWING THE DISTORTED SCREENSHOT
   image(photo, xPos, yPos, xPos+i, yPos+i);
+
+  // ADDING TRANSPARENCY TO THE SCREENSHOT
   tint(255, 126);
+
+  // SAVING THE NEW DISTORTED SCREENSHOT
   save("capture.jpg");
+
+  // WAITING A BIT IN ORDER TO SAVE THE FILE PROPERLY
   delay(50);
-  
-  xPos = pow(i,2);
-  yPos = pow(i,2);
-  
+
+  // CALCULATING THE POSITION OF THE IMAGE
+  xPos = pow(i, 2);
+  yPos = pow(i, 2);
+
+  // RESETTING THE POSITION OF THE IMAGE
   if (xPos > 500)
   {
     xPos = 0;
     yPos = 0;
   }
-  
-  println(yPos);
-  
+
+  // INCREMENTING I
   i = i+1;
 }
