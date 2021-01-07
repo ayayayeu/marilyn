@@ -1,7 +1,7 @@
 # Postmodern Warhol
 
 A hommage to Andy Warhol.  
-https://kenokeno.bingo/i-am-a-machine/
+https://kenokeno.bingo/works/i-am-a-machine/
  
 *Keno Westhoff*  
 *“The Algorithmic Dimension in Art”*  
